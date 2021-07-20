@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>live play</title>
+	<script src="https://kit.fontawesome.com/df45955d7c.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/owl.carousel.min.css" />
+	<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="player">
+	<div class="player-page-wrapper">
+		<div class="player__content">
+			<figure class="player__image">
+				<img src="img/artist.png" alt="" />
+			</figure>
+			<div class="player__details">
+				<div class="player__left">
+					<h4 class="heading-4 player__song--name">your power</h4>
+					<h4 class="heading-4 player__song--artist">billie eilish</h4>
+				</div>
+				<div class="player__center">
+					<h5 class="heading-5">live</h5>
+				</div>
+				<button class="player__right">
+					<div class="player__dots">
+						<div class="player__dot"></div>
+						<div class="player__dot"></div>
+						<div class="player__dot"></div>
+					</div>
+				</button>
+			</div>
+			<button class="player__icon">
+				<i class="fas fa-play"></i>
+			</button>
+			<div class="player__progress--container">
+				<button class="player__prev">
+					<svg>
+						<use xlink:href="./img/icons.svg#icon-volume-mute"></use>
+					</svg>
+				</button>
+				<div class="progress">
+					<div class="bar">
+						<div class="fill"></div>
+					</div>
+					<input type="range" min="0" max="100" value="0" step="1" id="slider" />
+				</div>
+				<button class="player__next">
+					<svg>
+						<use xlink:href="./img/icons.svg#icon-volume-medium"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="player__footer">
+			<button class="player__footer--left">
+				<svg class="icon-radio">
+					<use xlink:href="./img/icons.svg#icon-podcast"></use>
+				</svg>
+			</button>
+			<div class="player__footer--right">
+				<button>
+					<svg class="icon-message">
+						<use xlink:href="./img/icons.svg#icon-message-typing"></use>
+					</svg>
+				</button>
+				<button>
+					<svg class="icon-list">
+						<use xlink:href="./img/icons.svg#icon-list2"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

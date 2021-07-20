@@ -1,0 +1,100 @@
+.slider {
+  .owl-dots {
+    display: none;
+  }
+  .owl-nav {
+    display: none;
+  }
+
+  &3 {
+    .img {
+      position: relative;
+
+      // @media only screen and (max-width: $laptop-port) {
+      //   width: 13rem;
+      //   height: 13rem;
+      // }
+      // @media only screen and (max-width: $tab-port) {
+      //   width: 11rem;
+      //   height: 11rem;
+      // }
+    }
+  }
+}
+
+.home-page{
+  .artist__name{
+    font-size: 1.3rem;
+    color: #000;
+    opacity: .5;
+    margin-bottom: 1rem;
+  }
+  
+  .song__title-1{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .song__title-2{
+    font-size: 2.2rem;
+    opacity: .6;
+    margin-bottom: 2rem;
+  }
+  
+  .slide__item--1{
+    border-top: 1px solid #d6d6d6c7;
+    padding: 2rem 0;
+  }
+  
+  .slider1{
+    border-bottom: 1px solid #d6d6d6c7;
+  }
+
+  .slide__item {
+    .img{
+      max-height: 36rem;
+      height: 100%;
+    }
+  }
+}
+
+.slider3 {
+  // @media only screen and (max-width: $laptop-port) {
+  //   display: none !important;
+  // }
+}
+.slider2 {
+  // @media only screen and (max-width: $tab-port) {
+  //   display: none !important;
+  // }
+}
+
+.top__text{
+  background-color: #F9233D;
+  padding: 1.2rem 0;
+  text-align: center;
+  border-radius: 2rem;
+  color: #fff;
+
+  @media only screen and (max-width: 1500px){
+    margin-top: 9rem;
+  }
+
+  @media only screen and (max-width: $mbl-port){
+    padding: 1.2rem 2rem;
+  }
+}
+
+.main-content {
+  margin: 0;
+  margin-left: 320px;
+  margin-bottom: 15rem !important;
+  
+  @media only screen and (max-width: 1500px) {
+    margin: 0 auto;
+    margin-top: 13rem;
+    // width: 63%;
+    max-width: 114rem;
+  }
+}
+

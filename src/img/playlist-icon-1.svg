@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.618" height="13" viewBox="0 0 26.618 13">
+  <g id="playlist-icon" transform="translate(13866 4629)">
+    <g id="Group_106" data-name="Group 106" transform="translate(0 -3)">
+      <line id="Line_33" data-name="Line 33" x2="25.118" transform="translate(-13864.5 -4625.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <g id="Rectangle_109" data-name="Rectangle 109" transform="translate(-13866 -4626)" fill="#fff" stroke="#fff" stroke-width="1">
+        <rect width="1" height="1" rx="0.5" stroke="none"/>
+        <rect x="0.5" y="0.5" fill="none"/>
+      </g>
+    </g>
+    <g id="Group_107" data-name="Group 107" transform="translate(0 3)">
+      <line id="Line_33-2" data-name="Line 33" x2="25.118" transform="translate(-13864.5 -4625.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <g id="Rectangle_109-2" data-name="Rectangle 109" transform="translate(-13866 -4626)" fill="#fff" stroke="#fff" stroke-width="1">
+        <rect width="1" height="1" rx="0.5" stroke="none"/>
+        <rect x="0.5" y="0.5" fill="none"/>
+      </g>
+    </g>
+    <g id="Group_108" data-name="Group 108" transform="translate(0 9)">
+      <line id="Line_33-3" data-name="Line 33" x2="25.118" transform="translate(-13864.5 -4625.5)" fill="none" stroke="#fff" stroke-width="1"/>
+      <g id="Rectangle_109-3" data-name="Rectangle 109" transform="translate(-13866 -4626)" fill="#fff" stroke="#fff" stroke-width="1">
+        <rect width="1" height="1" rx="0.5" stroke="none"/>
+        <rect x="0.5" y="0.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

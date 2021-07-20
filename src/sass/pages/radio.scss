@@ -1,0 +1,87 @@
+.radio {
+
+  .slide__item{
+    .img{
+      // max-height: 28rem;
+      width: 100%;
+      height: 100%;
+      // height: 12rem;
+      img{
+        width: 100%;
+        height: 17rem;
+          object-fit: cover;
+          object-position: top center;
+      }
+    }
+  }
+  .slider2 {
+    border-bottom: 1px solid #c9c9c9d2;
+    padding-bottom: 3rem;
+    svg {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+    .song__title-1 {
+      display: flex;
+      align-items: center;
+      grid-column-gap: 0.8rem;
+    }
+
+    .artist__name {
+      opacity: 0.8;
+    }
+  }
+
+  .item__details {
+    padding: 2rem;
+    border-radius: 0 0 2rem 2rem;
+    // background-color: #7B1921;
+    border-top: 1px solid #d8d8d8dc;
+
+    .heading-5 {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    .heading-6 {
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .music__name {
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .music__text {
+      color: #d8d8d8d8;
+    }
+
+    &--1 {
+      background-color: #7b1921;
+    }
+    &--2 {
+      background-color: #0F110F;
+    }
+    &--3 {
+      background-color: #234046;
+    }
+    &--4 {
+      background-color: #D97956;
+    }
+    &--5 {
+      background-color: #1269FB;
+    }
+    &--6 {
+      background-color: #7b1921;
+    }
+    &--7 {
+      background-color: #0F110F;
+    }
+  }
+  .text__bottom {
+    color: #fa233b;
+    margin: 2rem 0 0 1.5rem;
+  }
+}

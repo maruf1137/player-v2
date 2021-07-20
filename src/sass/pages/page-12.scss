@@ -1,0 +1,48 @@
+.try-again {
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+    margin-top: 8rem;
+  }
+
+  &__text {
+      text-transform: capitalize;
+  }
+
+  &__icon {
+    svg {
+        height: 4rem;
+        width: 4rem;
+        fill: $color-primary;
+    }
+  }
+
+  &__content {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  .p-text{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+  }
+
+  .btn-try-again{
+    font-size: 1.8rem;
+    outline: none;
+    border: 2px solid #757575;
+    font-weight: 500;
+    padding: 1rem 4rem;
+    transition: all .3s;
+
+    &:hover, &:active{
+        background-color: #757575;
+        color: #fff;
+    }
+  }
+}

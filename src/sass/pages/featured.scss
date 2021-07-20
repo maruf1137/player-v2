@@ -1,0 +1,83 @@
+.featured-page {
+  .slider3 {
+    @media only screen and(max-width:$laptop-port) {
+      display: block !important;
+    }
+
+    @media only screen and (max-width: $tab-port) {
+      .owl-stage-outer {
+        overflow: visible;
+      }
+    }
+  }
+  .slider2 {
+    @media only screen and(max-width:$tab-port) {
+      display: block !important;
+    }
+  }
+
+  .featured-slider1{
+	border-bottom: 1px solid #e0e0e0;
+	padding-bottom: 3rem;
+  }
+
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+	padding: 2rem 0;
+  }
+
+  &__seeall {
+	  border: none;
+	  outline: none;
+	  padding: 0;
+	  height: 0;
+	  font-size: 1.8rem;
+	  color: #FA233B;
+  }
+
+  .song__title{
+	  color: #000;
+  }
+  .artist__name{
+	opacity: .5;
+  }
+
+  &__heading{
+	  font-size: 2.5rem;
+  }
+
+  .slide__item .img{
+	height: 24rem;
+	width: 100%;
+
+  @media only screen and (max-width: $tab-port){
+    height: 18rem;
+  }
+
+  @media only screen and (max-width: $mbl-port){
+    height: 14rem;
+  }
+
+	img{
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+  }
+
+  .main-content {
+    // margin: 0;
+    // margin-left: 320px;
+    // margin-bottom: 15rem !important;
+    
+    @media only screen and (max-width: 1500px) {
+      // margin: 0 auto;
+      margin-top: 5rem;
+      // width: 63%;
+      // max-width: 114rem;
+    }
+  }
+}

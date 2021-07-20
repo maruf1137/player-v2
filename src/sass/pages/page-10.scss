@@ -1,0 +1,32 @@
+.none {
+  max-height: 50.4rem;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .heading-4 {
+    font-size: 2.3rem;
+  }
+
+  .heading-5 {
+    font-size: 1.8rem;
+  }
+
+  .btn-playlist {
+    background-color: $color-primary;
+    color: #fff;
+    padding: 1.5rem 15rem;
+    border: 3px solid $color-primary;
+    outline: none;
+    border-radius: 1.5rem;
+    text-transform: capitalize;
+    transition: all 0.3s;
+
+    &:hover,
+    &:active {
+      background-color: transparent;
+      color: #000;
+    }
+  }
+}

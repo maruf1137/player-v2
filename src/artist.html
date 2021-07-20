@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Nunito:wght@400;700;900&display=swap"
+		rel="stylesheet" />
+	<!-- font-awesome  -->
+	<!-- <script src="https://kit.fontawesome.com/bdc84e071b.js" crossorigin="anonymous"></script> -->
+	<!--Css files  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css" />
+	<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="artist-page">
+
+	<!-- ========================================== -->
+	<!-- =============== mobie menu =============== -->
+	<!-- ========================================== -->
+	<div class="mobile-menu">
+		<button class="start-sidebar bar" onclick="sidebar()">
+			<svg>
+				<use xlink:href="./img/icons.svg#icon-bars"></use>
+			</svg>
+		</button>
+
+		<button class="close-sidebar bar" onclick="sidebar()">
+			<svg>
+				<use xlink:href="./img/icons.svg#icon-close"></use>
+			</svg>
+		</button>
+	</div>
+
+	<!-- ========================================== -->
+	<!-- =============== sidebar ================== -->
+	<!-- ========================================== -->
+	<div class="sidebar--overlay" onclick="sidebar()"></div>
+	<div class="sidebar">
+		<div class="sidebar__head">
+			<button class="sidebar__head--left">
+				<svg>
+					<use xlink:href="./img/Group 29.svg#Group_29"></use>
+				</svg>
+			</button>
+			<button class="sidebar__head--right">edit</button>
+		</div>
+		<h2 class="heading-2 black mb-2 mt-2">Music</h2>
+
+		<ul class="nav">
+			<li class="nav__item">
+				<a href="http://127.0.0.1:5502/src/player.html" class="nav__link">
+					<svg>
+						<use xlink:href="./img/sprite-2.svg#icon-play2"></use>
+					</svg>
+					listen now
+				</a>
+			</li>
+			<li class="nav__item">
+				<a href="http://127.0.0.1:5502/src/index.html" class="nav__link">
+					<svg>
+						<use xlink:href="./img/browse.svg#icon-chrome"></use>
+					</svg>
+					browse</a>
+			</li>
+			<li class="nav__item">
+				<a href="http://127.0.0.1:5502/src/radio.html" class="nav__link">
+					<svg>
+						<use xlink:href="./img/sprite-2.svg#icon-feed"></use>
+					</svg>
+					radio</a>
+			</li>
+			<li class="nav__item">
+				<a href="#" class="nav__link">
+					<svg>
+						<use xlink:href="./img/sprite-2.svg#icon-search"></use>
+					</svg>
+					search</a>
+			</li>
+		</ul>
+
+		<div class="drop mt-3">
+			<ul class="drop__list">
+				<li class="drop__item">
+					<a href="#" class="drop__link black">
+						<span class="drop__text">library</span>
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-chevron-down"></use>
+						</svg>
+					</a>
+					<div class="dropdown mt-1">
+						<a href="#" class="dropdown__item black">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-clock"></use>
+							</svg>
+							recently added</a>
+					</div>
+				</li>
+				<li class="drop__item">
+					<a href="#" class="drop__link black">
+						<span class="drop__text">playlists</span>
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-chevron-down"></use>
+						</svg>
+					</a>
+					<div class="dropdown mt-1">
+						<a href="#" class="dropdown__item black all-playlist">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-playlist"></use>
+							</svg>
+							all playlists
+						</a>
+						<a href="#" class="dropdown__item black">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-plus"></use>
+							</svg>
+							new playlist
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- ============================================== -->
+	<!-- ============== Content Area ================== -->
+	<!-- ============================================== -->
+	<div class="container main-content">
+		<div class="artist">
+			<div class="artist__head pt-2">
+				<button class="artist__back--button">
+					<svg>
+						<use xlink:href="./img/icons.svg#icon-chevron-left"></use>
+					</svg>
+				</button>
+				<button class="artist__dot-button">
+					<svg>
+						<use xlink:href="./img/icons.svg#icon-dots-three-horizontal"></use>
+					</svg>
+				</button>
+
+			</div>
+			<div class="row text-lg-left mt-3">
+				<div class="col-lg-5 col-md-5 col-sm-5 mb-2">
+					<figure class="img artist__image">
+						<img src="img/artist.png" class="img-fluid" alt="img" />
+					</figure>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-7 mb-2 mt-5">
+					<div class="artist__details">
+
+						<h2 class="heading artist__name black mb-1">The Plug</h2>
+						<h2 class="heading artist__title mb-1">Apple Music Hip-Hop</h2>
+						<h6 class="heading-6 artist__date mb-2">UPDATED FRIDAY</h6>
+						<p class="p__text mb-6">
+							Here’s one for the heads. From new drops by emerging voices to
+							Regional hits on their way ip to just-released bangers from the
+							Game’s biggest stars, this playlist collects hip-hop that’s just
+						</p>
+						<div class="artist__buttons">
+							<a href="#" class="btn btn__play">
+								<svg>
+									<use xlink:href="./img/icons.svg#icon-play3"></use>
+								</svg>
+								play
+							</a>
+							<a href="#" class="btn btn__shuffle">
+								<svg>
+									<use xlink:href="./img/icons.svg#icon-shuffle"></use>
+								</svg>
+								shuffle
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- ====================================== -->
+		<!-- ======== Latest songs area ========== -->
+		<!-- ====================================== -->
+		<ul class="song__list mb-5 mt-5">
+			<li class="song__list-item">
+				<figure class="img">
+					<img src="img/playing-song.png" alt="img" />
+				</figure>
+				<div class="song__info">
+					<!-- <div class="playing__icon-wrapper">
+						<p class="p__text song__length">03:25</p>
+						<span class="playing__indicator">&nbsp;</span>
+					</div> -->
+					<h5 class="heading-5 song__name">Cloud 9 (Amelie Lens Remix)</h5>
+					<!-- <p class="p__text artist__name">Nika Key</p> -->
+				</div>
+				<div class="artist__right">
+					<p class="artist__g">
+						G Herbo
+					</p>
+					<p class="artist__time">
+						2:40
+					</p>
+					<button href="#" class="btn dot__menu">
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-dot-menu"></use>
+						</svg>
+					</button>
+
+				</div>
+
+			</li>
+			<li class="song__list-item">
+				<figure class="img">
+					<img src="img/playing-song.png" alt="img" />
+				</figure>
+				<div class="song__info">
+					<!-- <div class="playing__icon-wrapper">
+						<p class="p__text song__length">03:25</p>
+						<span class="playing__indicator">&nbsp;</span>
+					</div> -->
+					<h5 class="heading-5 song__name">Cloud 9 (Amelie Lens Remix)</h5>
+					<!-- <p class="p__text artist__name">Nika Key</p> -->
+				</div>
+				<div class="artist__right">
+					<p class="artist__g">
+						G Herbo
+					</p>
+					<p class="artist__time">
+						2:40
+					</p>
+					<button href="#" class="btn dot__menu">
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-dot-menu"></use>
+						</svg>
+					</button>
+
+				</div>
+
+			</li>
+			<li class="song__list-item">
+				<figure class="img">
+					<img src="img/playing-song.png" alt="img" />
+				</figure>
+				<div class="song__info">
+					<!-- <div class="playing__icon-wrapper">
+						<p class="p__text song__length">03:25</p>
+						<span class="playing__indicator">&nbsp;</span>
+					</div> -->
+					<h5 class="heading-5 song__name">Cloud 9 (Amelie Lens Remix)</h5>
+					<!-- <p class="p__text artist__name">Nika Key</p> -->
+				</div>
+				<div class="artist__right">
+					<p class="artist__g">
+						G Herbo
+					</p>
+					<p class="artist__time">
+						2:40
+					</p>
+					<button href="#" class="btn dot__menu">
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-dot-menu"></use>
+						</svg>
+					</button>
+
+				</div>
+
+			</li>
+			<li class="song__list-item">
+				<figure class="img">
+					<img src="img/playing-song.png" alt="img" />
+				</figure>
+				<div class="song__info">
+					<!-- <div class="playing__icon-wrapper">
+						<p class="p__text song__length">03:25</p>
+						<span class="playing__indicator">&nbsp;</span>
+					</div> -->
+					<h5 class="heading-5 song__name">Cloud 9 (Amelie Lens Remix)</h5>
+					<!-- <p class="p__text artist__name">Nika Key</p> -->
+				</div>
+				<div class="artist__right">
+					<p class="artist__g">
+						G Herbo
+					</p>
+					<p class="artist__time">
+						2:40
+					</p>
+					<button href="#" class="btn dot__menu">
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-dot-menu"></use>
+						</svg>
+					</button>
+
+				</div>
+
+			</li>
+			<li class="song__list-item">
+				<figure class="img">
+					<img src="img/playing-song.png" alt="img" />
+				</figure>
+				<div class="song__info">
+					<!-- <div class="playing__icon-wrapper">
+						<p class="p__text song__length">03:25</p>
+						<span class="playing__indicator">&nbsp;</span>
+					</div> -->
+					<h5 class="heading-5 song__name">Cloud 9 (Amelie Lens Remix)</h5>
+					<!-- <p class="p__text artist__name">Nika Key</p> -->
+				</div>
+				<div class="artist__right">
+					<p class="artist__g">
+						G Herbo
+					</p>
+					<p class="artist__time">
+						2:40
+					</p>
+					<button href="#" class="btn dot__menu">
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-dot-menu"></use>
+						</svg>
+					</button>
+
+				</div>
+
+			</li>
+			<li class="song__list-item">
+				<figure class="img">
+					<img src="img/playing-song.png" alt="img" />
+				</figure>
+				<div class="song__info">
+					<!-- <div class="playing__icon-wrapper">
+						<p class="p__text song__length">03:25</p>
+						<span class="playing__indicator">&nbsp;</span>
+					</div> -->
+					<h5 class="heading-5 song__name">Cloud 9 (Amelie Lens Remix)</h5>
+					<!-- <p class="p__text artist__name">Nika Key</p> -->
+				</div>
+				<div class="artist__right">
+					<p class="artist__g">
+						G Herbo
+					</p>
+					<p class="artist__time">
+						2:40
+					</p>
+					<button href="#" class="btn dot__menu">
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-dot-menu"></use>
+						</svg>
+					</button>
+
+				</div>
+
+			</li>
+			<li class="song__list-item">
+				<figure class="img">
+					<img src="img/playing-song.png" alt="img" />
+				</figure>
+				<div class="song__info">
+					<!-- <div class="playing__icon-wrapper">
+						<p class="p__text song__length">03:25</p>
+						<span class="playing__indicator">&nbsp;</span>
+					</div> -->
+					<h5 class="heading-5 song__name">Cloud 9 (Amelie Lens Remix)</h5>
+					<!-- <p class="p__text artist__name">Nika Key</p> -->
+				</div>
+				<div class="artist__right">
+					<p class="artist__g">
+						G Herbo
+					</p>
+					<p class="artist__time">
+						2:40
+					</p>
+					<button href="#" class="btn dot__menu">
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-dot-menu"></use>
+						</svg>
+					</button>
+
+				</div>
+
+			</li>
+			<li class="song__list-item">
+				<figure class="img">
+					<img src="img/playing-song.png" alt="img" />
+				</figure>
+				<div class="song__info">
+					<!-- <div class="playing__icon-wrapper">
+						<p class="p__text song__length">03:25</p>
+						<span class="playing__indicator">&nbsp;</span>
+					</div> -->
+					<h5 class="heading-5 song__name">Cloud 9 (Amelie Lens Remix)</h5>
+					<!-- <p class="p__text artist__name">Nika Key</p> -->
+				</div>
+				<div class="artist__right">
+					<p class="artist__g">
+						G Herbo
+					</p>
+					<p class="artist__time">
+						2:40
+					</p>
+					<button href="#" class="btn dot__menu">
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-dot-menu"></use>
+						</svg>
+					</button>
+
+				</div>
+
+			</li>
+			<li class="song__list-item">
+				<figure class="img">
+					<img src="img/playing-song.png" alt="img" />
+				</figure>
+				<div class="song__info">
+					<!-- <div class="playing__icon-wrapper">
+						<p class="p__text song__length">03:25</p>
+						<span class="playing__indicator">&nbsp;</span>
+					</div> -->
+					<h5 class="heading-5 song__name">Cloud 9 (Amelie Lens Remix)</h5>
+					<!-- <p class="p__text artist__name">Nika Key</p> -->
+				</div>
+				<div class="artist__right">
+					<p class="artist__g">
+						G Herbo
+					</p>
+					<p class="artist__time">
+						2:40
+					</p>
+					<button href="#" class="btn dot__menu">
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-dot-menu"></use>
+						</svg>
+					</button>
+
+				</div>
+
+			</li>
+		</ul>
+	</div>
+
+	<!-- ====================================== -->
+	<!-- ========== currently playing ========= -->
+	<!-- ====================================== -->
+	<div class="playing-wrapper">
+		<div class="container-flued">
+			<div class="row align-items-center">
+				<div class="col-xl-2 col-lg-3 col-md-4 col-6 playing-song-col">
+					<div class="playing__song">
+						<figure class="playing__song-img">
+							<img src="./img/playing-song.png" alt="IMG" />
+						</figure>
+						<div class="playing__song-info">
+							<h3 class="heading song__title">not playing</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-8 col-lg-6 col-md-4 col-1 playing-control-col">
+					<div class="progress">
+						<div class="bar">
+							<div class="fill"></div>
+						</div>
+						<input type="range" min="0" max="100" value="0" step="1" id="slider" />
+					</div>
+				</div>
+
+				<div class="col-xl-2 col-lg-3 col-md-4 col-4 playing-control-col">
+					<div class="playing__control">
+						<button class="btn btn__prev btn__control">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-backward2"></use>
+							</svg>
+						</button>
+						<button class="btn btn__play btn__control">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-play3"></use>
+							</svg>
+						</button>
+						<button class="btn btn__next btn__control">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-forward3"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- bootstrap files -->
+	<script src="js/jquery.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+	<!-- carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+
+	<!-- Main js file -->
+	<script src="js/artist.js"></script>
+	<!-- <script src="js/index.js"></script> -->
+</body>
+
+</html>
+
+<!-- 
+	git add .
+	git commit -m ''
+	git push
+ -->

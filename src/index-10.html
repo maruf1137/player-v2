@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Nunito:wght@400;700;900&display=swap"
+		rel="stylesheet" />
+	<!-- font-awesome  -->
+	<!-- <script src="https://kit.fontawesome.com/bdc84e071b.js" crossorigin="anonymous"></script> -->
+	<!--Css files  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css" />
+	<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="playlist-page">
+	<!-- ========================================== -->
+	<!-- =============== mobie menu =============== -->
+	<!-- ========================================== -->
+	<div class="mobile-menu">
+		<button class="start-sidebar bar" onclick="sidebar()">
+			<svg>
+				<use xlink:href="./img/icons.svg#icon-bars"></use>
+			</svg>
+		</button>
+
+		<button class="close-sidebar bar" onclick="sidebar()">
+			<svg>
+				<use xlink:href="./img/icons.svg#icon-close"></use>
+			</svg>
+		</button>
+	</div>
+
+	<!-- ========================================== -->
+	<!-- =============== sidebar ================== -->
+	<!-- ========================================== -->
+	<div class="sidebar--overlay" onclick="sidebar()"></div>
+	<div class="sidebar">
+		<div class="sidebar__head">
+			<button class="sidebar__head--left">
+				<svg>
+					<use xlink:href="./img/Group 29.svg#Group_29"></use>
+				</svg>
+			</button>
+			<button class="sidebar__head--right">edit</button>
+		</div>
+		<h2 class="heading-2 black mb-2 mt-2">Music</h2>
+
+		<ul class="nav">
+			<li class="nav__item">
+				<a href="http://127.0.0.1:5502/src/player.html" class="nav__link">
+					<svg>
+						<use xlink:href="./img/sprite-2.svg#icon-play2"></use>
+					</svg>
+					listen now
+				</a>
+			</li>
+			<li class="nav__item">
+				<a href="http://127.0.0.1:5502/src/index.html" class="nav__link">
+					<svg>
+						<use xlink:href="./img/browse.svg#icon-chrome"></use>
+					</svg>
+					browse</a>
+			</li>
+			<li class="nav__item">
+				<a href="http://127.0.0.1:5502/src/radio.html" class="nav__link">
+					<svg>
+						<use xlink:href="./img/sprite-2.svg#icon-feed"></use>
+					</svg>
+					radio</a>
+			</li>
+			<li class="nav__item">
+				<a href="#" class="nav__link">
+					<svg>
+						<use xlink:href="./img/sprite-2.svg#icon-search"></use>
+					</svg>
+					search</a>
+			</li>
+		</ul>
+
+		<div class="drop mt-3">
+			<ul class="drop__list">
+				<li class="drop__item">
+					<a href="#" class="drop__link black">
+						<span class="drop__text">library</span>
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-chevron-down"></use>
+						</svg>
+					</a>
+					<div class="dropdown mt-1">
+						<a href="#" class="dropdown__item black">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-clock"></use>
+							</svg>
+							recently added</a>
+					</div>
+				</li>
+				<li class="drop__item">
+					<a href="#" class="drop__link black">
+						<span class="drop__text">playlists</span>
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-chevron-down"></use>
+						</svg>
+					</a>
+					<div class="dropdown mt-1">
+						<a href="#" class="dropdown__item black all-playlist">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-playlist"></use>
+							</svg>
+							all playlists
+						</a>
+						<a href="#" class="dropdown__item black">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-plus"></use>
+							</svg>
+							new playlist
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- ============================================== -->
+	<!-- ============== Content Area ================== -->
+	<!-- ============================================== -->
+
+	<div class="container main-content mt-5 mb-5">
+		<!-- content for playlist page -->
+
+		<div class="playlist">
+			<div class="playlist__head mb-2">
+				<button class="playlist__head--btn btn--new">new</button>
+				<button class="playlist__head--btn btn--start">start</button>
+			</div>
+			<div class="playlist__content">
+				<h2 class="heading-2 playlist__name mb-2">playlist</h2>
+				<form action="#" class="playlist__form">
+					<label for="search" class="playlist__search--icon">
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-search"></use>
+						</svg>
+					</label>
+					<input type="text" name="search" placeholder="find song" />
+				</form>
+			</div>
+		</div>
+
+		<!-- content for new playlist -->
+		<div class="new-playlist--overlay"></div>
+		<div class="new-playlist">
+			<div class="new-playlist__head mb-2">
+				<button class="btn-cencel">cencel</button>
+				<h2 class="heading">new playlist</h2>
+				<button class="btn-done">done</button>
+			</div>
+
+			<div class="new-playlist__body">
+				<div class="new-playlist__left">
+					<svg class="new-playllist__icon icon-playlist">
+						<use xlink:href="./img/icons.svg#icon-playlist"></use>
+					</svg>
+					<button class="icon-camera">
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-camera"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="new-playlist__right">
+					<form action="#">
+						<label for="" class="heading-2 mb-2">playlist name</label>
+						<input type="text" class="mb-3" />
+						<label for="" class="mb-2">description</label>
+						<input type="text" />
+					</form>
+				</div>
+			</div>
+			<div class="new-playlist__bottom mt-4">
+				<button class="icon">
+					<svg>
+						<use xlink:href="./img/icons.svg#icon-plus"></use>
+					</svg>
+				</button>
+				<span class="text">add music</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- ====================================== -->
+	<!-- ========== currently playing ========= -->
+	<!-- ====================================== -->
+	<div class="playing-wrapper">
+		<div class="container-flued">
+			<div class="row align-items-center">
+				<div class="col-xl-2 col-lg-3 col-md-4 col-6 playing-song-col">
+					<div class="playing__song">
+						<figure class="playing__song-img">
+							<img src="./img/playing-song.png" alt="IMG" />
+						</figure>
+						<div class="playing__song-info">
+							<h3 class="heading song__title">not playing</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-8 col-lg-6 col-md-4 col-1 playing-control-col">
+					<div class="progress">
+						<div class="bar">
+							<div class="fill"></div>
+						</div>
+						<input type="range" min="0" max="100" value="0" step="1" id="slider" />
+					</div>
+				</div>
+
+				<div class="col-xl-2 col-lg-3 col-md-4 col-4 playing-control-col">
+					<div class="playing__control">
+						<button class="btn btn__prev btn__control">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-backward2"></use>
+							</svg>
+						</button>
+						<button class="btn btn__play btn__control">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-play3"></use>
+							</svg>
+						</button>
+						<button class="btn btn__next btn__control">
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-forward3"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- bootstrap files -->
+	<script src="js/jquery.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+	<!-- carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+
+	<!-- Main js file -->
+	<!-- <script src="js/index.js"></script> -->
+	<script src="js/index-10.js"></script>
+</body>
+
+</html>

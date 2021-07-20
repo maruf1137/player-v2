@@ -1,0 +1,161 @@
+.artist-page {
+	@media only screen and (max-width: 1500px) {
+		margin-top: 8rem;
+	}
+
+	.btn__follow-outer,
+	.btn__back {
+		position: absolute;
+		top: 3rem;
+		right: 2rem;
+	}
+
+	.btn__follow-outer {
+		right: inherit;
+		left: 2rem;
+		// display: inline-block !important;
+	}
+
+	.artist {
+		&__image {
+			width: 100%;
+			height: 36rem;
+			border-radius: 6px;
+			overflow: hidden;
+			margin: 0 auto;
+
+			@media only screen and (max-width: $mbl-small) {
+				border-radius: 50%;
+				width: 28rem;
+				height: 28rem;
+				// margin-top: 5rem;
+			}
+			img {
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&__name {
+			font-size: 3rem;
+			font-weight: 600;
+		}
+
+		&__title {
+			font-size: 3rem;
+			font-weight: 600;
+			color: #fa233b;
+		}
+
+		&__date {
+			font-size: 1.2rem;
+			text-transform: uppercase;
+		}
+
+		&__buttons {
+			@media only screen and (max-width: $tab-port) {
+				display: flex;
+				flex-direction: column;
+				grid-gap: 2rem;
+			}
+			.btn {
+				background-color: #eeeeef;
+				color: #fa233b;
+				padding: 1rem 5.5rem;
+				border-radius: 1rem;
+				transition: all 0.3s;
+
+				// @media only screen and (max-width: $laptop-land) {
+				//   padding: 1rem 4.5rem;
+				// }
+
+				&:hover {
+					background-color: #cfcfcf;
+				}
+
+				&__play {
+					margin: 0;
+				}
+			}
+
+			svg {
+				height: 2rem;
+				width: 2rem;
+				fill: #fa233b;
+				margin-right: 1rem;
+			}
+		}
+
+		&__details {
+			// position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+
+		&__head {
+			display: flex;
+			justify-content: space-between;
+
+			svg {
+				height: 2rem;
+				width: 2rem;
+			}
+		}
+
+		&__back--button {
+			border: none;
+			outline: none;
+			background: transparent;
+			transition: all 0.3s;
+
+			&:hover,
+			&:active svg {
+				fill: #fa233b;
+			}
+		}
+
+		&__dot-button {
+			background-color: #d4d4d4;
+			padding: 0.5rem 1rem;
+			border-radius: 50%;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			transition: all 0.3s;
+
+			&:hover {
+				background-color: #ececec;
+			}
+		}
+
+		&__right {
+			display: flex;
+			// grid-column-gap: 2rem;
+			align-items: center;
+			margin-left: auto;
+		}
+
+		&__g {
+			margin-right: 15rem;
+			@media only screen and (max-width: $tab-port) {
+				margin-right: 2rem;
+			}
+		}
+		&__time {
+			margin-right: 8rem;
+			@media only screen and (max-width: $tab-port) {
+				margin-right: 2rem;
+			}
+		}
+	}
+
+	.main-content {
+		@media only screen and (max-width: 1500px) {
+			margin-top: 5rem;
+		}
+	}
+}
+.song__list {
+	border-top: 1px solid #dadada;
+}

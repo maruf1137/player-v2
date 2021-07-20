@@ -1,0 +1,29 @@
+@import './variables.scss';
+@import './typography.scss';
+@import './base.scss';
+
+// ===============================
+// components
+// ===============================
+@import './components/sidebar.scss';
+@import './components/sliderImages.scss';
+@import './components/miniSongsCard.scss';
+@import './components/playing.scss';
+@import './components/songList.scss';
+@import './components/buttons.scss';
+@import './components/dark.scss';
+
+// ===============================
+// pages
+// ===============================
+@import './pages/homepage.scss';
+@import './pages/radio.scss';
+@import './pages/featured.scss';
+@import './pages/artist.scss';
+@import './pages/playlist.scss';
+@import './pages/page-10.scss';
+@import './pages/page-11.scss';
+@import './pages/page-12.scss';
+
+@import './pages/player.scss';
+@import './fonts.scss';

@@ -1,0 +1,89 @@
+.playlist-page {
+  background-color: #fff;
+}
+
+.playlist {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  margin-top: 12rem;
+
+  &__head {
+    // display: flex;
+    // background-color: red;
+    justify-self: end;
+
+    &--btn {
+      border: none;
+      outline: none;
+      height: 0;
+      color: #000;
+      text-transform: capitalize;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+
+      &:hover,
+      &:active {
+        color: #fa233b;
+      }
+    }
+  }
+
+  &__content {
+  }
+
+  &__form {
+    border: 1px solid #eee;
+    background-color: #eeeeef;
+    height: 4.5rem;
+    width: 100%;
+    display: flex;
+    //   grid-column-gap: 2rem;
+    align-items: center;
+    //   padding: ;
+    border-radius: 1rem;
+
+    input {
+      // height: 100%;
+      width: 100%;
+      border: none;
+      outline: none;
+      background: transparent;
+      // padding: 5rem 1rem 5rem 0;
+    }
+  }
+
+  &__search--icon {
+    padding: 0.5rem 1rem;
+    svg {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  &__body{
+      display: flex;
+      grid-gap: 4rem;
+  }
+
+  &__item {
+    // border: 1px solid red;
+    // display: flex;
+  }
+
+  &__box {
+    background-color: #eee;
+    display: inline-block;
+    padding: 8rem;
+    border-radius: 1rem;
+
+    svg {
+      height: 6rem;
+      width: 6rem;
+      fill: $color-primary;
+    }
+  }
+}
